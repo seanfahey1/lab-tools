@@ -49,7 +49,7 @@ def get_sequences(search_results, out_file, batch_size=200, start_batch=0):
 
 
 def main():
-    query = ""
+    query = 'phage[TITLE] AND viruses[filter] AND refseq[filter] AND ("50"[SLEN] : "10000000"[SLEN])'
     search_results = get_search(query)
     get_sequences(
         search_results,
